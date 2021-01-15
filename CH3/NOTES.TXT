@@ -1,0 +1,67 @@
+Source files from Chapter 3
+
+All files in this directory were
+linted, compiled, and tested under:
+    Borland C++ 4.0 (large memory model)
+    Microsoft Visual C++ 1.5 (large memory model)
+    Watcom C 10.0 (extended DOS)
+    UnixWare 2.0 (SVR4)
+
+        birthday.c (listing 3-1)
+        hashpjw.c  (listing 3-2)
+        elfhash.c  (listing 3-3)
+        wordlist.c (listing 3-4)
+        llapp.c    (listing 3-5)
+
+    A makefile for wordlist.c is included as wordlist.mak
+    It is intended for Borland's compiler, large memory model
+    but can easily be edited for other compilers.
+
+    The files llgen.c, llgen.h, and llapp.c should be taken
+    from the listings in Chapter 2, as they are required by
+    the make file. For your convenience, these files also
+    appear in this directory.
+
+    birthday.dat is a sample data file for testing birthday.c
+
+    ----------------NOTICE TO MS-DOS/WINDOWS USERS --------------
+
+    Wordlist.c creates a hash table of unique words in memory.
+    Because of the Intel segmented architecture, a text file
+    of any size will overflow a single memory segment. Hence,
+    it is pointless to compile this program in the small memory
+    model. Use large as your default. With the large memory model,
+    wordlist can process small to medium size text files. For
+    large files, however, you must go to extended DOS. The file
+    for the "Hound of the Baskervilles," mentioned in the text
+    occupies 450KB and can only be run through the extended DOS
+    version of the program.
+
+    If you use UNIX, however, none of these concerns apply,
+    as UNIX knows how to map memory intellegently. Just compile
+    and run against any sized file.
+
+    ----------------------------------------------------------
+
+    DATE:   8/14/95 11:55 AM
+    Addition to Ch 3 NOTES.TXT
+
+    The Holub contribution to the original PJW hashing algorithm was
+    an attempt to add portability by use of macros in order to
+    accommodate integers of various widths. However, on most compilers,
+    the following line by Holub assigns 0 to BITS_IN_int (because
+    UINT_MAX + 1 rolls over to 0, as does UCHAR_MAX + 1).
+
+    While HashPJW() will still work when this occurs, its hashing quality
+    is significantly reduced. To get HashPJW() to work correctly while
+    retaining the portability Holub was striving for, replace this line
+    in Listing 3-2:
+
+    #define BITS_IN_int ((UINT_MAX + 1) / (UCHAR_MAX + 1)) / CHAR_BIT
+
+    with:
+
+    #define BITS_IN_int ( sizeof(int) * CHAR_BIT )
+
+    Performance of HashPJW() with this correction is comparable (and
+    sometimes better) than ElfHash().

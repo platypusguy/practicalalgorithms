@@ -1,0 +1,86 @@
+Source files from Chapter 6
+
+All files in this directory were
+linted, compiled, and tested under:
+    Borland C++ 4.0 (large memory model)
+    Microsoft Visual C++ 1.5 (small memory model)
+    Watcom C/C++ 10.0 (extended DOS)
+    UnixWare 2.0 (SVR4)
+
+        bintree.c  (listing 6-1)
+        bintree.h  (listing 6-2)
+        bt_hdr.h   (listing 6-3)
+        bt_new.c   (listing 6-4)
+        bt_open.c  (listing 6-5)
+        bt_data.c  (listing 6-6)
+        bt_disk.c  (listing 6-7)
+        user.h     (listing 6-8)
+        user.c     (listing 6-9)
+
+All binary-tree routines are in bintree.c. Different kinds of binary trees
+are created depending on whether you have #defined SPLAY or REDBLACK. In
+the absence of either of these, a standard binary tree is generated.
+
+Batch files for all four tested compilers are included:
+    bin-borl.bat    (Borland)
+    bin-msc.bat     (Microsoft)
+    bin-unix.bat    (UNIX sh script for UnixWare 2.0)
+    bin-watc.bat    (Watcom)
+
+B-Tree source code are in the files that begin with the bt_ prefix. User.c
+is a sample driver that reads in a file whose format is:
+
+                        last-name;first-name
+
+and creates a B-tree of the names. A sample file, called names.dat, is
+included for testing. To compile the B-tree source code, use any of the
+following files:
+
+    btrbor.mak      (a makefile for Borland)
+    btrmsc.bat      (a batch file compile for Microsoft)
+    btrwat.bat      (a batch file compile for Watcom that requires btrwat.lnk)
+    btrwat.lnk      (a linker file for Watcom used by btrwat.bat)
+
+    (UNIX users see UNIX section below)
+
+To run the binary tree, you will run user.exe. Then type n followed by a
+name of the B-tree files to be created. Then type o B-tree-filename to
+open the B-tree files. Then if you want to load names.dat, type @names.dat
+At this point, type ? and the complete menu will come up to show you the
+kind of B-tree information you can see displayed.
+
+So, if you wanted to load names.dat into a new B-tree file called newtree,
+you would type:
+
+    user
+    n newtree
+    o newtree
+    @names.dat
+    ?
+
+Bugs:
+
+A pair of minor bugs has been found in user.c:
+
+    line 439 (seen at top of page 353 in the book)
+    ur.name[25] = ... should read ur.name[24] = ...
+
+    line 441 (seen two lines below previous bug)
+    ur.addr[25] = ... should read ur.addr[24] = ...
+
+These have been corrected in the attached code.
+
+
+UNIX Users:
+
+The ability to draw binary trees in bintree.c defaults to an implementation
+that uses the PC's DOS line-drawing characters (dec 128-255). These will
+not work on UNIX. Hence, you need to compile with the ALTDRAW constant
+#defined. This switch simulates the tree-drawing characters, so that a
+tree can be drawn on a UNIX screen in character mode. See bin-unix.bat
+for an example of the command line under UnixWare.
+
+To compile the B-tree routines, use this command line:
+
+    cc user.c bt_*.c -o user.exe
+

@@ -1,0 +1,5 @@
+system dos4g
+name   user
+file   user.obj, bt_new.obj, bt_data.obj, bt_open.obj, bt_disk.obj
+libpath d:\wat10\lib386
+libpath d:\wat10\lib386\dos

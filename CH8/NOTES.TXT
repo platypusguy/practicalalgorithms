@@ -1,0 +1,38 @@
+Source files from Chapter 8
+
+All files in this directory were
+linted, compiled, and tested under:
+    Borland C++ 4.0 (large memory model)
+    Microsoft Visual C++ 1.5 (small memory model)
+    Watcom C 10.0 (extended DOS)
+    UnixWare 2.0 (SVR4)
+
+        calcmain.c (listing 8-1)
+        longmath.c (listing 8-2 through 8-19)
+        longmath.h (listing 8-20)
+        sqrtmain.c (listing 8-21)
+        amrtmain.c (listing 8-22)
+
+    When compiling a driver and the library of longmath
+    functions that appear in longmath.c, it is *important*
+    to make sure that MAX_SIZE is #defined for the same
+    number of digits of precision in both the driver and
+    the library. To aid in this, makefiles for the three
+    drivers are included. The makefiles are written for
+    Borland C compilers using large memory models. However,
+    they are heavily commented and easily ported to other
+    compilers. The files are:
+
+        calcmain.mak
+        sqrtmain.mak
+        amrtmain.mak
+
+    Also included are a number of small script files to
+    test the longmath calculator. These files have the
+    extension of .scr
+	
+	Update: The multiplication routine had an error, which
+	has been fixed. Thanks to Peter Gold in New Zealand for
+	reporting the error.
+
+----------------------------------------------------------

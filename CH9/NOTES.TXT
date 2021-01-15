@@ -1,0 +1,42 @@
+Source files from Chapter 9
+
+All files in this directory were
+linted, compiled, and tested under:
+    Borland C++ 4.0 (large memory model)
+    Microsoft Visual C++ 1.5 (small memory model)
+    UnixWare 2.0 (SVR4)
+
+        rle1.c     (listing 9-1)
+        unrle1.c   (listing 9-2)
+        huffenc.c  (listing 9-3)
+        huffdec.c  (listing 9-4)
+        huffman.h  (listing 9-5)
+        mslzunc.c  (listing 9-6)
+        mslzunc.h  (listing 9-7)
+        lzw.h      (listing 9-8)
+        lzcomp.c   (listing 9-9)
+        lzunc.c    (listing 9-10)
+        mscomp.c    *not listed in book*
+
+    mscomp.c is a compression program that produces
+    files in the same format as Microsoft's compress.exe
+    program. These files can be uncompressed with mslzunc.c.
+    This program uses sliding-window compression. It compresses
+    better than the Microsoft version but runs *much* more
+    slowly. Use it only for compressing the final version
+    of data. However, it is also the most effective compression
+    technique that is not patented (LZW is faster and more
+    effective, but patented as explained in the book).
+
+    The book versions of rle1.c and unrle1.c programs *must* be
+    compiled with the default of unsigned chars. If this is not done,
+    some compilers (especially under UNIX) will not uncompress
+    properly if the sentinel is > 0x80 (which it is by default).
+    To avoid the problem of it being incorrectly compiled,
+    the version on the disk is slightly different from the
+    book version: all char declarations/definitions have been
+    changed to unsigned char. No other changes were performed.
+    The result is that the disk versions of these programs can
+    be compiled on any platform and work correctly.
+
+----------------------------------------------------------

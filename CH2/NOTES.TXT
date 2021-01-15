@@ -1,0 +1,30 @@
+Source files from Chapter 2
+
+citytemp.c (listing 2-1)
+    use citytemp.dat for sample data
+lldriver.c (listing 2-5)
+    use wordlist.dat for sample data
+qdriver.c (listing 2-11)
+    use qdriver2.dat for sample data
+
+All files in this directory were
+linted, compiled, and tested under:
+    Borland C++ 4.0 (large memory model)
+    Microsoft Visual C++ 1.5 (small memory model)
+    Watcom C 10.0 (extended DOS)
+    UnixWare 2.0 (SVR4)
+
+        citytemp.c (listing 2-1)
+        llgen.h    (listing 2-2)
+        llgen.c    (listing 2-3)
+        llapp.h    (listing 2-4a)
+        llapp.c    (listing 2-4b)
+        lldriver.c (listing 2-5)
+        stacks.h   (listing 2-6)
+        stacks.c   (listing 2-7)
+        braces.c   (listing 2-8)
+        qapp.h     (listing 2-9)
+        qapp.c     (listing 2-10)
+        qdriver.c  (listing 2-11)
+
+----------------------------------------------------------

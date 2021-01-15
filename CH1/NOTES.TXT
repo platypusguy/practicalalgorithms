@@ -1,0 +1,23 @@
+Source files from Chapter 1
+
+All files in this directory were
+linted, compiled, and tested under:
+    Borland C++ 4.0 (large memory model)
+    Microsoft Visual C++ 1.5 (small memory model)
+
+        bufsize.c  (listing 1-1)
+
+This program reports the number of clock ticks required
+to copy a designated file using a variety of optionally
+specified input and output buffers. Only MS-DOS versions
+are provided, because there is no portable way under UNIX
+to measure clock ticks or fractions of a second. Under
+UNIX, you could have it measure elapsed seconds--using time()--
+and run the program on very large files to see the impact
+of buffer sizes. Several timings would have to be run in
+such cases, because UNIX will memory map files. The point
+of this program is to quantify the benefits of buffering
+on I/O. So under UNIX, you will initially be measuring the
+disk access gains, then the far smaller memory access gains.
+Be aware of what you're measuring under UNIX.
+----------------------------------------------------------

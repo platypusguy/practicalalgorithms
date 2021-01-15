@@ -1,0 +1,36 @@
+Source files from Chapter 5
+
+All files in this directory were
+linted, compiled, and tested under:
+    Borland C++ 4.0 (large memory model)
+    Microsoft Visual C++ 1.5 (small memory model)
+    Watcom C/C++ 10.0 (extended DOS)
+    UnixWare 2.0 (SVR4)
+
+                                      compilation/link requirements:
+        sortsub.c  (listing 5-1)
+        sortsub.h  (listing 5-2)
+        sorthdr.h  (listing 5-3)
+        bubble.c   (listing 5-4)      sortsub.c
+        insert.c   (listing 5-5)      sortsub.c, DRIVER #defined in insert.c
+        shell.c    (listing 5-6)      sortsub.c
+        quick1.c   (listing 5-7)      sortsub.c
+        quick2.c   (listing 5-8)      sortsub.c, insert.c
+        quick3.c   (listing 5-9)      sortsub.c, insert.c
+        quick4.c   (listing 5-10)     sortsub.c, insert.c
+        quick5.c   (listing 5-11)     sortsub.c, insert.c, a driver like
+                                            qstest.c (listing 5-20) modified
+                                            to call xqsort()
+
+        heap.c     (listing 5-12)     sortsub.c
+        lsortsub.c (listing 5-13)
+        lsortsub.h (listing 5-14)
+        lsorthdr.h (listing 5-15)
+        linsert.c  (listing 5-16)     lsortsub.c, DRIVER #defined in linsert.c
+        lquick1.c  (listing 5-17)     lsortsub.c, linsert.c
+        lquick2.c  (listing 5-18)     lsortsub.c, linsert.c
+        bose-nel.c (listing 5-19)     must be linked to floating-pt library
+        qstest.c   (listing 5-20)
+        makedata.c (listing 5-21)
+
+----------------------------------------------------------

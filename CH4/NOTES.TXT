@@ -1,0 +1,41 @@
+Source files from Chapter 4
+
+All files in this directory were
+linted, compiled, and tested under:
+    Borland C++ 4.0 (large memory model)
+    Microsoft Visual C++ 1.5 (small memory model)
+    Watcom C/C++ 10.0 (extended DOS)
+    UnixWare 2.0 (SVR4)
+
+        brute1.c   (listing 4-1)
+        brute2.c   (listing 4-2)
+        boyermor.c (listing 4-3)
+        msrch.c    (listing 4-4)
+        minigrep.c (listing 4-5)
+        approx.c   (listing 4-6)
+        soundex.c  (listing 4-7)
+        metaphon.c (listing 4-8)
+
+    Due to the varied nature of the searches, the command
+    line syntax and the program functions vary slightly.
+
+    brute1.c, brute2.c, and boyermor.c only search through
+    the first 10,000 characters in the file. As explained,
+    this was done to show the search engine's innards without
+    burying them in the file-management code that any programmer
+    could write.
+
+    approx.c expects two parameters: the search string and the
+    text to search. Note that text is not a file but a string
+    specified on the command line.
+
+    This implementation of grep (called minigrep) accepts a
+    wildcard pattern string and searches through a file. You can use
+    the UNIX wildcard syntax, except that the pattern string cannot
+    begin with an * or a ?
+
+    Finally, metaphon.c had a small bug in the initializations
+    processing as listed in the book. The correction and the comments
+    for it appear in Listing 4-8.
+
+----------------------------------------------------------

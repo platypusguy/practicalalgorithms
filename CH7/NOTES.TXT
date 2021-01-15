@@ -1,0 +1,28 @@
+Source files from Chapter 7
+
+All files in this directory were
+linted, compiled, and tested under:
+    Borland C++ 4.0 (large memory model)
+    Microsoft Visual C++ 1.5 (small memory model)
+    Watcom C 10.0 (extended DOS)
+    UnixWare 2.0 (SVR4)
+
+        lilcal.c   (listing 7-1)
+        datelib.h  (listing 7-2)
+        datelib.c  (contains all the date and time
+                    presented in chapter 7)
+
+    datelib.c comes with a driver to exercise the various functions.
+    It reads in a script such as that contained by datetest.scr.
+    This script was used primarily for debugging purposes; however
+    it does show the output of a variety of date and time functions.
+
+    lilcal.c calls the functions in datelib.c. To compile datelib.c
+    to be a true library, you must make sure to comment out DRIVER.
+    When DRIVER is commented out, no main() is included and the
+    resulting file can be used as a library or linkable module.
+
+Datelib.c v. 1.1 contains a bug fix that corrects a problem printing
+    years correctly. The correction is explained in the comments at
+    the beginning of the file.
+----------------------------------------------------------
