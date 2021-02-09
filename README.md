@@ -25,25 +25,25 @@ users of UNIX.
 Six defects have been identified since the book appeared. They are
 discussed in the notes.txt files for chapters 3, 4, 6, 7, and 8.
 
-To report a bug, send e-mail to the authors. E-mail addresses
-appear at the end of this file.
+To report a bug, send a message via Facebook to Andrew Binstock
+or to him on Twitter (@platypusguy)
 
 We trust that you understand the authors cannot offer
 technical support for this product. The book is the manual.
 
-HOWEVER, we will keep you posted about bug reports. 
-To check for more recent versions of the code, go to 
-
-www.github.com/platypusguy/practicalgorithms
+The most recent versions of the code are always [here](
+www.github.com/platypusguy/practicalgorithms).
 
 ## Copyright
 
 All the source code in the book and on this diskette is copyrighted by
-the authors: (c) Copyright Andrew Binstock and John Rex, 1995-99. No
+the authors: (c) Copyright Andrew Binstock and John Rex, 1995-2021. No
 portion of this source code or associated files may printed in the book, 
-even in modified form, nor be resold or published without specific written permission of the authors, except as provided for in the Boost License. You may use the object code derived from the source code freely
+even in modified form, nor be resold or published without specific written 
+permission of the authors, except as provided for in the Boost License. 
+You may use the object code derived from the source code freely
 in your applications.
 
 Andrew Binstock (@platypusguy) 
 
-Post comments or corrections via GitHub or contact Andrew via Twitter.
+Post comments or corrections via GitHub issues or contact Andrew Binstock via Twitter or on Facebook.
