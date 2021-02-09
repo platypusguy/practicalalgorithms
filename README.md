@@ -1,9 +1,9 @@
-# practicalalgorithms
-Code from Practical Algorithms book by Andrew Binstock and John Rex (Addison-Wesley, 1995, 16th Printing)
+# Practical Algorithms for Programmers
 
 Source Code for
 
 PRACTICAL ALGORITHMS FOR PROGRAMMERS
+by Andrew Binstock and John Rex (Addison-Wesley, 1995, 16th Printing)
 
 Version 2.1 (as of 1 October 2013)
 
