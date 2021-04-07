@@ -21,9 +21,11 @@ Notes.txt also contains any special information needed by
 users of UNIX.
 
 ## Caveat
-Note that this code was originally published in 1995, which means it adheres only to the C89 standard and was tested only on 16- and 32-bit platforms. Save for the six corrections mentioned below, it has not been updated. This directory is primarily for archival purposes and presented in the hope that it might be useful to readers and students.
+This directory is presented here primarily for archival purposesin the hope that it might be useful to readers and students.
 
-The authors do not intend to update the code to newer C standards or to more modern coding conventions. 
+Note that this code was originally published in 1995, which means it adheres only to the C89 standard and uses coding conventions that were in vogue at that time. It has been tested only on the major 16- and 32-bit platforms of that period. (See the notes.txt files for more information). 
+
+Save for the six defects that were corrected (see next section), it has not been updated. 
 
 ## Errata
 
@@ -33,12 +35,10 @@ discussed in the notes.txt files for chapters 3, 4, 6, 7, and 8.
 We trust that you understand the authors cannot offer
 technical support for this product. The book is the manual.
 
-
 ## Copyright
 
-All the source code copyrighted by
-the authors: (c) Copyright Andrew Binstock and John Rex, 1995-2021. You are allowed to do anything with the code that is allowed by the Boost license.
-You may use the object code derived from the source code freely in your applications.
+This code is copyrighted by
+the authors, Andrew Binstock and John Rex, (c) 1995-2021. You are allowed to do anything with the code that is allowed by the Boost license.
 
 Andrew Binstock (@platypusguy) 
 
