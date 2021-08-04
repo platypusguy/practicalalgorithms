@@ -44,7 +44,7 @@ Andrew Binstock (@platypusguy)
 
 # Reviews from the Press
 
-"If your math challenge comes from working with extremely high precision (dozens or hundreds of digits), you'll nee an abritrary precision math package. Check out _Practical Algorightms for Programmers_ by Andrew Binstock and John Rex. We spend a lot of time implementing various algorithms, so I always reach for a new book on the subject with great hope that ususally leads to disappointment. Why does every single algorithm book coveer the same old sorting and searching routines? This book, though, does have the complete source code for an arbitrary precision math package. You also find some neat data compression and CRC code. It's worth the price if you code these sorts of routines." --- Jack Ganssle, _Embedded Systems Programming_, September 1997, p. 127
+"If your math challenge comes from working with extremely high precision (dozens or hundreds of digits), you'll nee an abritrary precision math package. Check out _Practical Algorithms for Programmers_ by Andrew Binstock and John Rex. We spend a lot of time implementing various algorithms, so I always reach for a new book on the subject with great hope that ususally leads to disappointment. Why does every single algorithm book coveer the same old sorting and searching routines? This book, though, does have the complete source code for an arbitrary precision math package. You also find some neat data compression and CRC code. It's worth the price if you code these sorts of routines." --- Jack Ganssle, _Embedded Systems Programming_, September 1997, p. 127
     
 
 
