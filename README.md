@@ -21,7 +21,7 @@ Notes.txt also contains any special information needed by
 users of UNIX.
 
 ## Caveat
-This directory is presented here primarily for archival purposesin the hope that it might be useful to readers and students.
+This directory is presented here primarily for archival purposes in the hope that it might be useful to readers and students.
 
 Note that this code was originally published in 1995, which means it adheres only to the C89 standard and uses coding conventions that were in vogue at that time. It has been tested only on the major 16- and 32-bit platforms of that period. (See the notes.txt files for more information). 
 
